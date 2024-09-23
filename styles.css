@@ -1,8 +1,16 @@
+/* adding local fonts */
 @font-face {
     font-family: "Sedan SC";
     src: url(./resources/SedanSC-Regular.ttf);
 }
 
+/* adding local fonts */
+@font-face {
+    font-family: "Short Baby";
+    src: url(./resources/ShortBaby-Mg2w.ttf);
+}
+
+/* main content */
 body {
     font-family: "Sedan SC", serif;
 }
