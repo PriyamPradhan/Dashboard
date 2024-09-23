@@ -1,13 +1,13 @@
 /* adding local fonts */
 @font-face {
     font-family: "Sedan SC";
-    src: url(./resources/SedanSC-Regular.ttf);
+    src: url(./resources/fonts/SedanSC-Regular.ttf);
 }
 
 /* adding local fonts */
 @font-face {
     font-family: "Short Baby";
-    src: url(./resources/ShortBaby-Mg2w.ttf);
+    src: url(./resources/fonts/ShortBaby-Mg2w.ttf);
 }
 
 /* main content */
@@ -50,6 +50,7 @@ main {
 #profile-name {
     color: white;
     font-weight: 250;
+    font-size: 22px;
     font-family: "Short Baby", serif;
 }
 
