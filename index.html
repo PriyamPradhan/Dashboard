@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DashBoard</title>
-</head>
-<body>
-    <main>Hello! This is a Dashboard.</main>
-</body>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <main>
+        <section class="left">
+            <div class="profile">
+                <img id="profile-pic" src="./resources/img/man.jpg" alt="my profile picture">
+                <p id="profile-name">Priyam Pradhan</p>
+            </div>
+            <div class="nav">
+                <span class="material-symbols-outlined">lists</span>
+                <a href="">DASHBOARD</a>
+            </div>
+            <div class="nav">
+                <span class="material-symbols-outlined">sell</span>
+                <a href="">DATA</a>
+            </div>
+            <div class="nav">
+                <span class="material-symbols-outlined">group</span>
+                <a href="">USERS</a>
+            </div>
+            <div class="nav">
+                <span class="material-symbols-outlined">calendar_month</span>
+                <a href="">SCHEDULE</a>
+            </div>
+            <div class="nav">
+                <span class="material-symbols-outlined">import_contacts</span>
+                <a href="">CONTACT</a>
+            </div>
+        </section>
+        <section class="right">
+            <header>
+                <h1>DashBoard</h1>
+                <input type="text" placeholder="Search..">
+            </header>
+            <article id="board">
+                <div>
+                    <h3>Activities</h3>
+                    <p>May-June 2024</p>
+                    <div id="activitiesDiv"><img src="./resources/img/BarGraph.png" alt="bargraph"></div>
+                </div>
+            </article>
+            <article id="data">
+                    <h3>Dashboard Data</h3>
+                    <div class="card-container">
+                        <div class="card1 card">
+                            <span class="material-symbols-outlined data1">attach_money</span>
+                            <p class="cardHead">Total Revenue</p>
+                            <p class="cardData">$456,553,563</p>
+                        </div>
+                        <div class="card2 card">
+                            <span class="material-symbols-outlined data2">sell</span>
+                            <p class="cardHead">Total Transactions</p>
+                            <p class="cardData">1,450</p>
+                        </div>
+                        <div class="card3 card">
+                            <span class="material-symbols-outlined data3">thumb_up</span>
+                            <p class="cardHead">Total Likes</p>
+                            <p class="cardData">1,234</p>
+                        </div>
+                        <div class="card4 card">
+                            <span class="material-symbols-outlined data4">person</span>
+                            <p class="cardHead">Total User</p>
+                            <p class="cardData">856</p>
+                        </div>
+                    </div>
+            </article>
+            <article id="users"></article>
+            <article id="schedule"></article>
+            <article id="contact"></article>
+            <footer></footer>
+        </section>
+    </main>
+  </body>
 </html>
