@@ -176,7 +176,7 @@ header>input:focus {
     background-color: rgb(195, 186, 207);
 }
 
-.material-symbols-outlined {
+.data1, .data2, .data3, .data4 {
     margin-top: 10px;
     margin-left: 146px;
 }
