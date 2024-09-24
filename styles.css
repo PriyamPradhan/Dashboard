@@ -330,8 +330,10 @@ table tbody tr:hover {
 
 /* contact */
 
-#contacth2 {
+#contacth3 {
     margin-left: 50px;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .contact-inner {
@@ -392,4 +394,35 @@ iframe {
     color: white;
     font-weight: bolder;
     cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer div {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: lightgray;
+}
+
+footer a:last-child {
+    margin-right: 0;
+}
+
+.hover:hover {
+    font-size: 22px;
+    transition: 1s;
 }
