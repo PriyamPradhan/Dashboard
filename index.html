@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DashBoard</title>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/5abcde45eb.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -17,25 +18,27 @@
                 <img id="profile-pic" src="./resources/img/man.jpg" alt="my profile picture">
                 <p id="profile-name">Priyam Pradhan</p>
             </div>
-            <div class="nav">
-                <span class="material-symbols-outlined">lists</span>
-                <a href="">DASHBOARD</a>
-            </div>
-            <div class="nav">
-                <span class="material-symbols-outlined">sell</span>
-                <a href="">DATA</a>
-            </div>
-            <div class="nav">
-                <span class="material-symbols-outlined">group</span>
-                <a href="">USERS</a>
-            </div>
-            <div class="nav">
-                <span class="material-symbols-outlined">calendar_month</span>
-                <a href="">SCHEDULE</a>
-            </div>
-            <div class="nav">
-                <span class="material-symbols-outlined">import_contacts</span>
-                <a href="">CONTACT</a>
+            <div id="scroll-nav">
+                <div class="nav">
+                    <span class="material-symbols-outlined">lists</span>
+                    <a href="">DASHBOARD</a>
+                </div>
+                <div class="nav">
+                    <span class="material-symbols-outlined">sell</span>
+                    <a href="">DATA</a>
+                </div>
+                <div class="nav">
+                    <span class="material-symbols-outlined">group</span>
+                    <a href="">USERS</a>
+                </div>
+                <div class="nav">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <a href="">SCHEDULE</a>
+                </div>
+                <div class="nav">
+                    <span class="material-symbols-outlined">import_contacts</span>
+                    <a href="">CONTACT</a>
+                </div>
             </div>
         </section>
         <section class="right">
@@ -51,7 +54,7 @@
                 </div>
             </article>
             <article id="data">
-                    <h3>Dashboard Data</h3>
+                    <h3 class="hover">Dashboard Data</h3>
                     <div class="card-container">
                         <div class="card1 card">
                             <span class="material-symbols-outlined data1">attach_money</span>
@@ -75,10 +78,120 @@
                         </div>
                     </div>
             </article>
-            <article id="users"></article>
-            <article id="schedule"></article>
-            <article id="contact"></article>
-            <footer></footer>
+            <article id="users">
+                <h3 class="hover">User Interactions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Number of Users</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>January</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            <td>March</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <td>April</td>
+                            <td>1250</td>
+                        </tr>
+                        <tr>
+                            <td>May</td>
+                            <td>1600</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article id="schedule">
+                <div class="schedule-head">
+                    <h3>Today's Schedule</h3>
+                    <p>See All</p>
+                </div>
+                <div class="schedule-details">
+                    <div>
+                        <p class="meets head">Meeting from suppliers from Kutta bali</p>
+                        <p class="meets detail">14.00-15.00</p>
+                        <p class="meets detail">at sunset road kutta bali</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meeting from Dr.Chittaranjan Chakraborty</p>
+                        <p class="meets detail">16.00-17.00</p>
+                        <p class="meets detail">at park street, kutta bali</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meeting from Dr.Chittaranjan Chakraborty</p>
+                        <p class="meets detail">16.00-17.00</p>
+                        <p class="meets detail">at park street, kutta bali</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meeting from Dr.Chittaranjan Chakraborty</p>
+                        <p class="meets detail">16.00-17.00</p>
+                        <p class="meets detail">at park street, kutta bali</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meeting from Dr.Chittaranjan Chakraborty</p>
+                        <p class="meets detail">16.00-17.00</p>
+                        <p class="meets detail">at park street, kutta bali</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meeting from Dr.Chittaranjan Chakraborty</p>
+                        <p class="meets detail">16.00-17.00</p>
+                        <p class="meets detail">at park street, kutta bali</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meeting from Dr.Chittaranjan Chakraborty</p>
+                        <p class="meets detail">16.00-17.00</p>
+                        <p class="meets detail">at park street, kutta bali</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meeting from Dr.Chittaranjan Chakraborty</p>
+                        <p class="meets detail">16.00-17.00</p>
+                        <p class="meets detail">at park street, kutta bali</p>
+                    </div>
+                    <div>
+                        <p class="meets head">Meta from Dr.Chittaranjan Chakraborty</p>
+                        <p class="meets detail">16.00-17.00</p>
+                        <p class="meets detail">at park street, kutta bali</p>
+                    </div>
+                </div>
+            </article>
+            <article id="contact">
+                <h3 class="hover" id="contacth3">Contact Details</h3>
+                <div class="contact-inner">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448694.34340565413!2d76.88002888135563!3d28.526955963556713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1727182812812!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="feedback">
+                        <h2>Feedback</h2>
+                        <form action="#" method="post">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <br>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <br>
+                            <textarea name="message" placeholder="Your Feedback" required></textarea>
+                            <br>
+                            <input type="submit" value="Submit Feedback">
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <footer>
+                <div>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <div>
+                        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>
         </section>
     </main>
   </body>
